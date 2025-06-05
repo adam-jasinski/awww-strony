@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@layer base {
+    a {
+      @apply text-green-600 hover:text-green-800 hover:underline;
+    }
+  }
+  
