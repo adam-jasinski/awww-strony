@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+body a {
+  color: #00cc11;
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ddd;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+.sidebar:hover {
+  background-color: #bbb;
+}
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.table-wrapper {
+  transition: background-color 0.3s;
+}
+@media (min-width: 801px) {
+  .table-wrapper:hover {
+    background-color: #ccfffb;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th, table td {
+  border: 1px solid #aaa;
+  padding: 0.5rem;
+  text-align: left;
+}
+table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-container {
+  background-color: #fdf6e3;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+.highlight-container:hover {
+  background-color: #ffeabf;
+}
+.highlight-container .map-list-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.highlight-container .map-list-wrapper .criteria,
+.highlight-container .map-list-wrapper .map-block {
+  flex: 1;
+}
+@media (max-width: 800px) {
+  .highlight-container .map-list-wrapper {
+    flex-direction: column;
+  }
+}
+
+.justify-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.justify-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: rgb(91.8, 91.8, 91.8);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.justify-demo {
+  display: flex;
+  background-color: #eee;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #af3f3f;
+}
+.justify-demo div {
+  background-color: rgba(247, 173, 173, 0.801);
+  padding: 0.5rem 1rem;
+  border: 1px solid #aaa;
+}
+
+.justify-left {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

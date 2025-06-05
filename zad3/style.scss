@@ -1,0 +1,146 @@
+@use "sass:color";
+
+// 6. Zmienne
+$bg-color: #f4f4f4;
+$text-color: #222;
+$link-color: #00cc11;
+$hover-color-table: #ccfffb;
+$hover-color-sidebar: #bbb;
+$hover-color-highlight: #ffeabf;
+
+// 8. Mixin – hover
+@mixin hover-bg($color) {
+  &:hover {
+    background-color: $color;
+  }
+}
+
+// Ogólne style
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Panel boczny – widoczny tylko przy >800px
+.sidebar {
+  width: 200px;
+  background-color: #ddd;
+  padding: 1rem;
+  transition: background-color 0.3s;
+
+  @include hover-bg($hover-color-sidebar);
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+// Główny kontener (sidebar + main)
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+// Sekcja z tabelą – podświetlana osobno
+.table-wrapper {
+    transition: background-color 0.3s;
+  
+    // Hover tylko dla szerokości >800px
+    @media (min-width: 801px) {
+      @include hover-bg($hover-color-table);
+    }
+  }
+  
+
+// Tabela
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid #aaa;
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Sekcja z listą i mapą – własny kontener z kolorem podświetlenia
+.highlight-container {
+  background-color: #fdf6e3;
+  padding: 1rem;
+  transition: background-color 0.3s;
+
+  @include hover-bg($hover-color-highlight);
+
+  .map-list-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+
+    .criteria,
+    .map-block {
+      flex: 1;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+}
+
+// Stopka – z użyciem funkcji SCSS
+footer {
+  background-color: color.scale(#333, $lightness: 20%);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+// Sekcja demo justify-content
+.justify-demo {
+    display: flex;
+    background-color: #eee;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #af3f3f;
+  
+    div {
+      background-color: rgba(247, 173, 173, 0.801);
+      padding: 0.5rem 1rem;
+      border: 1px solid #aaa;
+    }
+  }
+  
+  .justify-left {
+    justify-content: flex-start;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-right {
+    justify-content: flex-end;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  
