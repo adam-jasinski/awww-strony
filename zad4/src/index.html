@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranking języków programowania – Tailwind</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed p-6 [a]:text-rose-600 [a:hover]:underline [a:hover]:text-rose-800">
+
+  <header class="bg-blue-100 p-4 rounded mb-6 shadow">
+    <h1 class="text-3xl font-bold text-blue-700">Ranking języków programowania</h1>
+    <p class="text-sm text-gray-600">Zadanie 4</p>
+  </header>
+
+  <div class="flex flex-col md:flex-row">
+    <aside class="w-full md:w-48 bg-gray-200 text-gray-700 p-4 mb-6 md:mb-0 md:mr-6 rounded shadow hidden md:block hover:bg-gray-400">
+  <p class="font-semibold">Panel boczny</p>
+</aside>
+    <main class="space-y-10 flex-1">
+
+
+    <section class="bg-white p-4 rounded shadow md:hover:bg-blue-50">
+      <h2 class="text-2xl font-semibold mb-4">Najpopularniejsze języki</h2>
+      <table class="table-auto w-full border border-gray-400">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="p-2 border">Język</th>
+            <th class="p-2 border">Link do opisu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="p-2 border">Python page</td><td class="p-2 border"><a href="/python_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">C++ page</td><td class="p-2 border"><a href="/c++_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Java page</td><td class="p-2 border"><a href="/java_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">C page</td><td class="p-2 border"><a href="/c_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">C# page</td><td class="p-2 border"><a href="/c-_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">JavaScript page</td><td class="p-2 border"><a href="/javascript_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">SQL page</td><td class="p-2 border"><a href="/sql_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Go page</td><td class="p-2 border"><a href="/go_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Delphi/Object Pascal page</td><td class="p-2 border"><a href="/delphi_object_pascal_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Visual Basic page</td><td class="p-2 border"><a href="/visual_basic_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Fortran page</td><td class="p-2 border"><a href="/fortran_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Scratch page</td><td class="p-2 border"><a href="/scratch_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Rust page</td><td class="p-2 border"><a href="/rust_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">PHP page</td><td class="p-2 border"><a href="/php_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">R page</td><td class="p-2 border"><a href="/r_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">MATLAB page</td><td class="p-2 border"><a href="/matlab_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Assembly language page</td><td class="p-2 border"><a href="/assembly_language_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">COBOL page</td><td class="p-2 border"><a href="/cobol_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Ruby page</td><td class="p-2 border"><a href="/ruby_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+          <tr><td class="p-2 border">Prolog page</td><td class="p-2 border"><a href="/prolog_page/" class="text-blue-600 underline">Zobacz więcej</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="bg-white p-4 rounded shadow hover:bg-orange-50">
+      <h2 class="text-xl font-semibold mb-4">Kryteria oceny oraz mapa obrazka</h2>
+      <div class="flex flex-col md:flex-row gap-6">
+        <ol class="list-[upper-roman] list-inside flex-1">
+          <li>Wydajność</li>
+          <li>Wsparcie społeczności</li>
+          <li>Zastosowanie komercyjne</li>
+          <li>Przenośność</li>
+          <li>Łatwość nauki</li>
+        </ol>
+        <div class="flex-1">
+          <img src="mdn-info2.png" usemap="#infographic" width="360" height="322" alt="MDN infographic" class="border rounded" />
+          <map name="infographic">
+            <area shape="poly" coords="179,204,83,149,4,283,16,316,180,316" href="https://developer.mozilla.org/docs/Web/HTML" alt="HTML">
+            <area shape="poly" coords="279,147,179,205,180,316,347,316,353,282" href="https://developer.mozilla.org/docs/Web/CSS" alt="CSS">
+            <area shape="poly" coords="179,204,280,147,197,8,165,7,83,148" href="https://developer.mozilla.org/docs/Web/JavaScript" alt="JavaScript">
+          </map>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white p-4 rounded shadow flex items-center gap-4">
+  <div>
+    <div class="w-4 h-4 rounded-full bg-red-400 animate-ping"></div>
+    <h2 class="text-xl font-semibold mb-4">Formularz zgłoszeniowy</h2>
+        <form class="space-y-4">
+          <label class="block">Imię:
+            <input type="text" name="imie" class="mt-1 block w-full border border-gray-300 rounded p-2" />
+          </label>
+          <label class="block">Ulubiony język:
+            <select class="mt-1 block w-full border border-gray-300 rounded p-2">
+              <optgroup label="Backend">
+                <option>Python</option>
+                <option>Java</option>
+                <option>C#</option>
+              </optgroup>
+              <optgroup label="Frontend">
+                <option>JavaScript</option>
+                <option>TypeScript</option>
+              </optgroup>
+            </select>
+          </label>
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Wyślij</button>
+        </form>
+  </div>
+</section>
+  
+      <section class="bg-white p-4 rounded shadow">
+        <h2 class="text-xl font-semibold mb-4">Dlaczego warto programować?</h2>
+        <details class="bg-gray-50 p-4 rounded border border-gray-200">
+          <summary class="cursor-pointer font-medium">Kliknij, aby przeczytać więcej</summary>
+          <p class="mt-2"><em>Programowanie</em> uczy logicznego myślenia, rozwiązywania problemów i otwiera wiele ścieżek kariery.</p>
+        </details>
+      </section>
+  
+      <section class="bg-white p-4 rounded shadow">
+        <h2 class="text-xl font-semibold mb-4">Postęp wykonania zadania</h2>
+        <label for="progress">Postęp:</label>
+        <progress id="progress" value="100" max="100" class="w-full h-4 mt-1">100%</progress>
+      </section>
+  
+
+    <section class="bg-white p-4 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4">Film edukacyjny</h2>
+      <div class="w-full max-w-3xl mx-auto">
+        <div class="relative" style="padding-top: 56.25%">
+          <iframe class="absolute top-0 left-0 w-full h-full rounded" src="https://www.youtube.com/embed/k2IydkL3EOs" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white p-4 rounded shadow">
+      <h2 class="text-xl font-semibold mb-4">Prezentacja justify</h2>
+      <div class="flex justify-start gap-4 mb-2 bg-gray-100 p-2">
+        <div class="bg-white p-2 border">Start</div>
+        <div class="bg-white p-2 border">Start</div>
+      </div>
+      <div class="flex justify-center gap-4 mb-2 bg-gray-100 p-2">
+        <div class="bg-white p-2 border">Center</div>
+        <div class="bg-white p-2 border">Center</div>
+      </div>
+      <div class="flex justify-end gap-4 mb-2 bg-gray-100 p-2">
+        <div class="bg-white p-2 border">End</div>
+        <div class="bg-white p-2 border">End</div>
+      </div>
+      <div class="flex justify-between gap-4 bg-gray-100 p-2">
+        <div class="bg-white p-2 border">Between</div>
+        <div class="bg-white p-2 border">Between</div>
+      </div>
+    </section>
+
+  </main>
+  </div>
+  <footer class="text-center text-sm text-gray-500 mt-10">
+    Adam Jasiński – Aplikacje WWW
+  </footer>
+
+</body>
+</html>
