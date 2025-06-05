@@ -1,6 +1,5 @@
 @use "sass:color";
 
-// 6. Zmienne
 $bg-color: #f4f4f4;
 $text-color: #222;
 $link-color: #00cc11;
@@ -8,14 +7,12 @@ $hover-color-table: #ccfffb;
 $hover-color-sidebar: #bbb;
 $hover-color-highlight: #ffeabf;
 
-// 8. Mixin – hover
 @mixin hover-bg($color) {
   &:hover {
     background-color: $color;
   }
 }
 
-// Ogólne style
 body {
   font-family: Arial, sans-serif;
   background-color: $bg-color;
@@ -31,7 +28,6 @@ body {
   }
 }
 
-// Panel boczny – widoczny tylko przy >800px
 .sidebar {
   width: 200px;
   background-color: #ddd;
@@ -45,7 +41,6 @@ body {
   }
 }
 
-// Główny kontener (sidebar + main)
 .container {
   display: flex;
   gap: 1rem;
@@ -56,11 +51,10 @@ body {
   }
 }
 
-// Sekcja z tabelą – podświetlana osobno
+
 .table-wrapper {
     transition: background-color 0.3s;
-  
-    // Hover tylko dla szerokości >800px
+
     @media (min-width: 801px) {
       @include hover-bg($hover-color-table);
     }
@@ -84,7 +78,6 @@ table {
   }
 }
 
-// Sekcja z listą i mapą – własny kontener z kolorem podświetlenia
 .highlight-container {
   background-color: #fdf6e3;
   padding: 1rem;
@@ -108,7 +101,6 @@ table {
   }
 }
 
-// Stopka – z użyciem funkcji SCSS
 footer {
   background-color: color.scale(#333, $lightness: 20%);
   color: white;
@@ -116,7 +108,6 @@ footer {
   text-align: center;
 }
 
-// Sekcja demo justify-content
 .justify-demo {
     display: flex;
     background-color: #eee;
