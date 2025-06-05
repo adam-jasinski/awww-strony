@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ranking języków programowania</title>
+</head>
+<body>
+
+<header>
+  <h1>Ranking języków programowania</h1>
+  <p><em>Strona prezentuje popularne języki programowania</em></p>
+</header>
+
+<article>
+  <h2>Tabela popularności</h2>
+
+  <table>
+    <caption>Najpopularniejsze języki programowania</caption>
+    <thead>
+      <tr>
+        <th scope="col">Język</th>
+        <th scope="col">Link do opisu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Python</td><td><a href="#">Zobacz więcej</a></td></tr>
+      <tr><td>C++</td><td><a href="#">Zobacz więcej</a></td></tr>
+      <tr><td>Java</td><td><a href="#">Zobacz więcej</a></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Najważniejsze technologie</h2>
+  <ol type="I">
+    <li><strong>Python</strong> – wszechstronny język</li>
+    <li><strong>JavaScript</strong> – do stron internetowych</li>
+    <li><strong>C++</strong> – do aplikacji desktopowych</li>
+  </ol>
+
+  <h2>Obrazek</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="Logo języka C" width="200" usemap="#mapa-jezykow">
+
+  <map name="mapa-jezykow">
+    <area shape="rect" coords="0,0,60,60" href="#" alt="Python">
+    <area shape="circle" coords="100,100,40" href="#" alt="JavaScript">
+    <area shape="poly" coords="160,0,200,40,180,80" href="#" alt="C++">
+  </map>
+
+  <h2>Formularz kontaktowy</h2>
+  <form>
+    <label>Imię: <input type="text" name="imie"></label><br>
+    <label>Ulubiony język:
+      <select>
+        <optgroup label="Backend">
+          <option>Python</option>
+          <option>Java</option>
+        </optgroup>
+        <optgroup label="Frontend">
+          <option>JavaScript</option>
+          <option>TypeScript</option>
+        </optgroup>
+      </select>
+    </label><br>
+    <button type="submit">Wyślij</button>
+  </form>
+
+  <h2>Dodatkowe informacje</h2>
+  <details>
+    <summary>Dlaczego warto uczyć się programowania?</summary>
+    <p><em>Programowanie</em> rozwija logiczne myślenie i otwiera wiele możliwości zawodowych.</p>
+  </details>
+
+  <h2>Postęp</h2>
+  <label for="progress">Postęp wykonania zadania:</label>
+  <progress id="progress" value="80" max="100">80%</progress>
+</article>
+
+<footer>
+  <p>Strona wykonana w ramach przedmiotu <strong>Aplikacje WWW</strong>.</p>
+</footer>
+
+</body>
+</html>
