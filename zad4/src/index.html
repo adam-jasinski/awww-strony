@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ranking języków programowania – Tailwind</title>
-  <link href="output.css" rel="stylesheet" />
+  <link href="output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed p-6 [a]:text-rose-600 [a:hover]:text-rose-800 [a:hover]:underline">
 
   <header class="bg-blue-100 p-4 rounded mb-6 shadow">
     <h1 class="text-3xl font-bold text-blue-700">Ranking języków programowania</h1>
-    <p class="text-sm text-gray-600">Zadanie 4</p>
+    <p class="text-sm text-gray-600">Strona o najpopularniejszych językach programowania</p>
   </header>
 
   <div class="flex flex-col md:flex-row">
@@ -18,15 +18,14 @@
   <p class="font-semibold">Panel boczny</p>
 </aside>
     <main class="space-y-10 flex-1">
-
-
     <section class="bg-white p-4 rounded shadow md:hover:bg-blue-50">
-      <h2 class="text-2xl font-semibold mb-4">Najpopularniejsze języki</h2>
+      <h2 class="text-2xl font-semibold mb-4">Tabela popularności języków</h2>
       <table class="table-auto w-full border border-gray-400">
+        <caption class="text-1xl font-semibold mb-4">Najpopularniejsze języki programowania</caption>
         <thead class="bg-gray-200">
           <tr>
-            <th class="p-2 border">Język</th>
-            <th class="p-2 border">Link do opisu</th>
+            <th class="p-2 border" scope="col">Język</th>
+            <th class="p-2 border" scope="col">Link do opisu</th>
           </tr>
         </thead>
         <tbody>
@@ -65,7 +64,7 @@
           <li>Łatwość nauki</li>
         </ol>
         <div class="flex-1">
-          <img src="mdn-info2.png" usemap="#infographic" width="360" height="322" alt="MDN infographic" class="border rounded" />
+          <img src="mdn-info2.png" usemap="#infographic" width="360" height="322" alt="MDN infographic" class="border rounded">
           <map name="infographic">
             <area shape="poly" coords="179,204,83,149,4,283,16,316,180,316" href="https://developer.mozilla.org/docs/Web/HTML" alt="HTML">
             <area shape="poly" coords="279,147,179,205,180,316,347,316,353,282" href="https://developer.mozilla.org/docs/Web/CSS" alt="CSS">
@@ -81,7 +80,7 @@
     <h2 class="text-xl font-semibold mb-4">Formularz zgłoszeniowy</h2>
         <form class="space-y-4">
           <label class="block">Imię:
-            <input type="text" name="imie" class="mt-1 block w-full border border-gray-300 rounded p-2" />
+            <input type="text" name="imie" class="mt-1 block w-full border border-gray-300 rounded p-2">
           </label>
           <label class="block">Ulubiony język:
             <select class="mt-1 block w-full border border-gray-300 rounded p-2">
@@ -100,7 +99,6 @@
         </form>
   </div>
 </section>
-  
       <section class="bg-white p-4 rounded shadow">
         <h2 class="text-xl font-semibold mb-4">Dlaczego warto programować?</h2>
         <details class="bg-gray-50 p-4 rounded border border-gray-200">
@@ -108,40 +106,44 @@
           <p class="mt-2"><em>Programowanie</em> to droga do wielu zdolności, często uznawanych za... nienaturalne.</p>
         </details>
       </section>
-  
       <section class="bg-white p-4 rounded shadow">
         <h2 class="text-xl font-semibold mb-4">Postęp wykonania zadania</h2>
         <label for="progress">Postęp:</label>
         <progress id="progress" value="99" max="100" class="w-full h-4 mt-1">99%</progress>
       </section>
-  
-
     <section class="bg-white p-4 rounded shadow">
-      <h2 class="text-xl font-semibold mb-4">Film edukacyjny</h2>
+      <h2 class="text-xl font-semibold mb-4">Film o HTML</h2>
       <div class="w-full max-w-3xl mx-auto">
-        <div class="relative" style="padding-top: 56.25%">
-          <iframe class="absolute top-0 left-0 w-full h-full rounded" src="https://www.youtube.com/embed/k2IydkL3EOs" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        <div class="relative pt-[56.25%]">
+          <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/k2IydkL3EOs"
+          title="YouTube video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
         </div>
       </div>
     </section>
-
     <section class="bg-white p-4 rounded shadow">
       <h2 class="text-xl font-semibold mb-4">Prezentacja justify</h2>
       <div class="flex justify-start gap-4 mb-2 bg-gray-100 p-2">
-        <div class="bg-white p-2 border">Start</div>
-        <div class="bg-white p-2 border">Start</div>
+        <div class="bg-white p-2 border">Mogę być</div>
+        <div class="bg-white p-2 border">po lewo!</div>
       </div>
       <div class="flex justify-center gap-4 mb-2 bg-gray-100 p-2">
-        <div class="bg-white p-2 border">Center</div>
-        <div class="bg-white p-2 border">Center</div>
+        <div class="bg-white p-2 border">Albo</div>
+        <div class="bg-white p-2 border">po środku!</div>
       </div>
       <div class="flex justify-end gap-4 mb-2 bg-gray-100 p-2">
-        <div class="bg-white p-2 border">End</div>
-        <div class="bg-white p-2 border">End</div>
+        <div class="bg-white p-2 border">Lub nawet</div>
+        <div class="bg-white p-2 border">po prawo!</div>
       </div>
       <div class="flex justify-between gap-4 bg-gray-100 p-2">
-        <div class="bg-white p-2 border">Between</div>
-        <div class="bg-white p-2 border">Between</div>
+        <div class="bg-white p-2 border">Ale przede wszystkim</div>
+        <div class="bg-white p-2 border">mogę się porozciągać</div>
+        <div class="bg-white p-2 border">po całej stronie!</div>
       </div>
     </section>
 
